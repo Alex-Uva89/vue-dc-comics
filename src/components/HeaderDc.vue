@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <li v-for="(link, index) in links" :key="index"><a :href="link.href"> {{link.text}} </a></li>
+      <li @mouseover="setActiveIndex(index)"  v-for="(link, index) in links" :key="index" :class="{active: index == activeIndex}"><a :href="link.href"> {{link.text}} </a></li>
     </ul>
   </nav>
 </template>
@@ -11,7 +11,8 @@
 export default {
   name: 'HeaderDc',
   data () {
-    return{
+    return {
+      activeIndex: 0,
       links: [
         {
           href: '#',
@@ -55,6 +56,11 @@ export default {
         }
       ]
     }
+  },
+  methods:{
+    setActiveIndex (index) {
+      this.activeIndex = index
+    }
   }
 }
 </script>
@@ -64,11 +70,20 @@ export default {
 
 li{
   display: inline-block;
-  padding: .5rem;
+  padding: 3rem 0rem 3rem;
+  margin: 0 .5rem;
+  &.active {
+    color: $blue-DC;
+    border-bottom: 2px solid $blue-DC
+  }
   a {
     text-decoration: none;
-    color: var(--black-text)
-  } 
+    color: $black-text;
+    &:hover {
+      color: $blue-DC
+    }
+  }
+  
 }
 
 </style>
