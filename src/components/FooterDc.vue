@@ -7,16 +7,16 @@
             <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
         </ul>
         <ul class="list">
+            <li><h3>Shop</h3></li>
+            <li v-for="(link, index) in shop" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+        <ul class="list">
             <li><h3>Dc</h3></li>
             <li v-for="(link, index) in dc" :key="index"><a :href="link.href">{{ link.text }}</a></li>
         </ul>
         <ul class="list">
             <li><h3>Sites</h3></li>
             <li v-for="(link, index) in sites" :key="index"><a :href="link.href">{{ link.text }}</a></li>
-        </ul>
-        <ul class="list">
-            <li><h3>Shop</h3></li>
-            <li v-for="(link, index) in shop" :key="index"><a :href="link.href">{{ link.text }}</a></li>
         </ul>
       </div>
 
@@ -26,7 +26,10 @@
   </div> 
   <!-- container fine -->
   <div class="container-bottom">
-          
+        <button>Sign-up</button>
+        <ul>
+            <li></li>
+        </ul>
   </div>
     
 </footer>
@@ -163,7 +166,7 @@ export default {
 
 .container-footer{
     height: 500px;
-    width: 100vw;
+    width: 99vw;
     color: $white;
     display: flex;
     justify-content: space-around;
@@ -174,12 +177,13 @@ export default {
 }
 
 .container-lists{
+    height: 70%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .list{
-    width: 25%;
     margin-right: 1rem;
     margin-bottom: .6rem;
     list-style: none;
@@ -200,8 +204,19 @@ export default {
 }
 
 .container-bottom{
+    width: 100%;
     height: 100px;
-    background-color: $color-footer
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-footer;
+    button{
+        text-transform: uppercase;
+        padding: 1rem;
+        color: $white;
+        background-color: $transparent;
+        border: 1px solid $white;
+    }
 }
 
 

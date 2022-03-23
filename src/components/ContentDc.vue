@@ -72,7 +72,7 @@ export default {
 }
 
 .container-blue{
-    width: 100vw;
+    width: 99vw;
     height: 200px;
     background-color: $blue-DC;
     color: $white;
