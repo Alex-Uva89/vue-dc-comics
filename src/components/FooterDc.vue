@@ -243,6 +243,7 @@ export default {
             background-color: $white;
             box-shadow: inset 0 0 5px $black;
             border: 1px solid $black;
+            transition: all 1s;
         }
     }
     .list{
@@ -257,6 +258,9 @@ export default {
             cursor: pointer;
             &:hover{
                 transform: scale(1.1);
+                filter: brightness(100); 
+                
+
             }
         }
     }

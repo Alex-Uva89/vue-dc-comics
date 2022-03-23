@@ -186,6 +186,7 @@ export default {
     button:hover{
         background-color: $white;
         color: $blue-DC;
+        transition: all 1s;
     }
 }
 
@@ -224,6 +225,7 @@ ul{
         align-items: center;
         &:hover{
                 transform: scale(1.2);
+                transition: all .5s;
             }
         span{
             font-size: .8rem;

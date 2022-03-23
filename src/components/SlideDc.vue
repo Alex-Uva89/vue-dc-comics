@@ -27,13 +27,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
     &:hover{
                 padding: .5rem;
-                transform: scale(1.2);
+                transform: scale(1.3);
                 background-color: $blue-DC;
                 align-items: center;
                 z-index: 5;
-                border-radius: 1rem ;
+                border-radius: 1rem;
+                transition: padding 1s, transform 1.5s, background-color 1s, align-items 1.5s, z-index 1.5s;
             }
     .container-img{
         width: 150px;
@@ -41,6 +43,9 @@ export default {
         overflow: hidden;
         position: relative;
         margin-bottom: 5px;
+        &:hover{
+            border-radius: 1rem;
+        }
         img{
             width: 105%;
             position: absolute;
