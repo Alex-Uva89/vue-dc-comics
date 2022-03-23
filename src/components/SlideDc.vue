@@ -34,6 +34,14 @@ export default {
         width: 150px;
         height: 150px;
         overflow: hidden;
+        position: relative;
+        img{
+            width: 105%;
+            position: absolute;
+            top:0;
+            right: 0%;
+            
+        }
     }
     
     h2{

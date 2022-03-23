@@ -2,6 +2,7 @@
     <main>
         <div class="container-black">
             <div class="container-slides">
+            <button class="series-btn">current series</button>
             <SlideDc v-for="(card,index) in slides" 
             :key="index" 
             :card-src="card.thumb" 
@@ -10,7 +11,14 @@
             class="card"
              />
             </div>
+
+            <div class="container-btn">
+                <button>load more</button>
+            </div>
         </div>
+
+
+        
         <div class="container-blue">
             <ul>
                 <li v-for="(card, index) in links" :key="index">
@@ -155,12 +163,33 @@ export default {
 .container-slides{
     width: 1000px;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding-top: 5rem;
     color: $white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    .series-btn{
+        position: absolute;
+        left: 0;
+        top: -15px;
+    }
+}
+
+.container-btn{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: $white;
+    text-transform: uppercase;
+    padding: .5rem 3rem;
+    background-color: $blue-DC;
 }
 
 

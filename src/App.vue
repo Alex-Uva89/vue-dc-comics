@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <HeaderDc />
+    <JumboDc />
     <ContentDc />
     <FooterDc />
   </div>
 </template>
 
 <script>
-// import SlideDc from './components/SlideDc.vue'
+import JumboDc from './components/JumboDc.vue'
 import FooterDc from './components/FooterDc.vue'
 import ContentDc from './components/ContentDc.vue'
 import HeaderDc from './components/HeaderDc.vue'
@@ -19,7 +20,7 @@ export default {
     HeaderDc,
     ContentDc,
     FooterDc,
-    // SlideDc
+    JumboDc
   }
 }
 </script>
