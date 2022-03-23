@@ -28,7 +28,7 @@
   <div class="container-bottom">
         <button>Sign-up</button>
         <ul>
-            <li></li>
+            <li></li> 
         </ul>
   </div>
     
@@ -36,6 +36,8 @@
 </template>
 
 <script>
+
+
 export default {
     name: 'FooterDc',
     data (){
@@ -156,6 +158,11 @@ export default {
                 text: 'Comics'
                 },
             ],
+            // icons: [
+            //     {
+            //         image: 
+            //     }
+            // ]
         }
     }
 }
@@ -166,7 +173,6 @@ export default {
 
 .container-footer{
     height: 500px;
-    width: 99vw;
     color: $white;
     display: flex;
     justify-content: space-around;
@@ -204,7 +210,6 @@ export default {
 }
 
 .container-bottom{
-    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-evenly;

@@ -7,6 +7,7 @@
 </template>
 
 <script>
+// import SlideDc from './components/SlideDc.vue'
 import FooterDc from './components/FooterDc.vue'
 import ContentDc from './components/ContentDc.vue'
 import HeaderDc from './components/HeaderDc.vue'
@@ -18,6 +19,7 @@ export default {
     HeaderDc,
     ContentDc,
     FooterDc,
+    // SlideDc
   }
 }
 </script>

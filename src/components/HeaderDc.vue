@@ -87,7 +87,7 @@ li{
   cursor: pointer;
   &.active {
     color: $blue-DC;
-    border-bottom: 5px solid $blue-DC
+    border-bottom: .5rem solid $blue-DC
   }
   
 
