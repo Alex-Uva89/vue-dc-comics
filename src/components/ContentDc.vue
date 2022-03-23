@@ -183,9 +183,15 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    button:hover{
+        background-color: $white;
+        color: $blue-DC;
+    }
 }
 
 button{
+    cursor: pointer;
+    font-weight: bold;
     color: $white;
     text-transform: uppercase;
     padding: .5rem 3rem;
@@ -216,6 +222,9 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+                transform: scale(1.2);
+            }
         span{
             font-size: .8rem;
             padding-left: .5rem;

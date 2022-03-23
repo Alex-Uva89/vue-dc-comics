@@ -81,6 +81,7 @@ header{
 }
 
 li{
+  font-weight: 600;
   display: inline-block;
   padding: 3rem 0rem 3rem;
   margin: 0 .5rem;

@@ -27,8 +27,23 @@
   <!-- container fine -->
   <div class="container-bottom">
         <button>Sign-up</button>
-        <ul>
-            <li></li> 
+        <ul class="list">
+           <li>follow us</li>
+           <li>
+               <img src="../img/footer-facebook.png" alt="Facebook">
+           </li>
+           <li>
+               <img src="../img/footer-periscope.png" alt="Periscope">
+           </li>
+           <li>
+               <img src="../img/footer-pinterest.png" alt="Pinterest">
+           </li>
+           <li>
+               <img src="../img/footer-twitter.png" alt="Twitter">
+           </li>
+           <li>
+               <img src="../img/footer-youtube.png" alt="Toutube">
+           </li>
         </ul>
   </div>
     
@@ -216,11 +231,34 @@ export default {
     align-items: center;
     background-color: $color-footer;
     button{
+        cursor: pointer;
+        font-weight: bold;
         text-transform: uppercase;
-        padding: 1rem;
+        padding: .8rem 1.5rem;
         color: $white;
         background-color: $transparent;
-        border: 1px solid $white;
+        border: 2px solid $white;
+        &:hover{
+            color: $black-text;
+            background-color: $white;
+            box-shadow: inset 0 0 5px $black;
+            border: 1px solid $black;
+        }
+    }
+    .list{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $blue-DC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        img{
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 }
 

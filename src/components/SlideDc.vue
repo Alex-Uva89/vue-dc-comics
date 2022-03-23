@@ -24,23 +24,28 @@ export default {
 .card{
     width: calc(100% / 6);
     height: 180px;
-    margin-bottom:1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
-    
+    &:hover{
+                padding: .5rem;
+                transform: scale(1.2);
+                background-color: $blue-DC;
+                align-items: center;
+                z-index: 5;
+                border-radius: 1rem ;
+            }
     .container-img{
         width: 150px;
         height: 150px;
         overflow: hidden;
         position: relative;
+        margin-bottom: 5px;
         img{
             width: 105%;
             position: absolute;
             top:0;
             right: 0%;
-            
         }
     }
     
