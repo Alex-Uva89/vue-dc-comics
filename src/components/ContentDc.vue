@@ -87,6 +87,7 @@ ul{
     align-items: center;
     li{
         padding-right: 5rem;
+        cursor: pointer;
     }
     a{
         text-decoration: none;

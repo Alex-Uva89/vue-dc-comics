@@ -8,15 +8,15 @@
         </ul>
         <ul class="list">
             <li><h3>Dc</h3></li>
-            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
-        </ul>
-        <ul class="list">
-            <li><h3>Shop</h3></li>
-            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+            <li v-for="(link, index) in dc" :key="index"><a :href="link.href">{{ link.text }}</a></li>
         </ul>
         <ul class="list">
             <li><h3>Sites</h3></li>
-            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+            <li v-for="(link, index) in sites" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+        <ul class="list">
+            <li><h3>Shop</h3></li>
+            <li v-for="(link, index) in shop" :key="index"><a :href="link.href">{{ link.text }}</a></li>
         </ul>
       </div>
 
@@ -67,6 +67,92 @@ export default {
                 text: 'News'
                 }
             ],
+            dc: [
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+            ],
+            sites: [
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+                {
+                href: '#',
+                text: 'Movie'
+                },
+                {
+                href: '#',
+                text: 'Tv'
+                },
+                {
+                href: '#',
+                text: 'Games'
+                },
+                {
+                href: '#',
+                text: 'Videos'
+                },
+                {
+                href: '#',
+                text: 'News'
+                }
+            ],
+            shop: [
+                {
+                href: '#',
+                text: 'Characters'
+                },
+                {
+                href: '#',
+                text: 'Comics'
+                },
+            ],
         }
     }
 }
@@ -106,6 +192,9 @@ export default {
         a{
             color: $white-text;
             text-decoration: none;
+            &:hover{
+                color: $white;
+            }
         }
     }
 }

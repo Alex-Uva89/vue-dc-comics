@@ -75,12 +75,16 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  img{
+    cursor: pointer;
+  }
 }
 
 li{
   display: inline-block;
   padding: 3rem 0rem 3rem;
   margin: 0 .5rem;
+  cursor: pointer;
   &.active {
     color: $blue-DC;
     border-bottom: 5px solid $blue-DC
