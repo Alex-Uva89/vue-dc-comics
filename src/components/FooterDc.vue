@@ -1,35 +1,35 @@
 <template>
+<footer>
   <div class="container-footer">
-      <ul>
-          <li>
-              Dc Comics
-              <ul>
-                  <li v-for="(item, index) in item" :key="index">{{item}}</li>
-              </ul>
-          </li>
-          <li>
-              Dc Comics
-              <ul>
-                  <li v-for="(item, index) in item" :key="index">ciao</li>
-              </ul>
-          </li>
-          <li>
-              Dc Comics
-              <ul>
-                  <li v-for="(item, index) in item" :key="index">ciao</li>
-              </ul>
-          </li>
-          <li>
-              Dc Comics
-              <ul>
-                  <li v-for="(item, index) in item" :key="index">ciao</li>
-              </ul>
-          </li>
-      </ul>
+      <div class="container-lists">
+        <ul class="list">
+            <li><h3>Dc Comics</h3></li>
+            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+        <ul class="list">
+            <li><h3>Dc</h3></li>
+            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+        <ul class="list">
+            <li><h3>Shop</h3></li>
+            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+        <ul class="list">
+            <li><h3>Sites</h3></li>
+            <li v-for="(link, index) in Comics" :key="index"><a :href="link.href">{{ link.text }}</a></li>
+        </ul>
+      </div>
+
       <div>
           <img src="../img/dc-logo-bg.png" alt="">
       </div>
+  </div> 
+  <!-- container fine -->
+  <div class="container-bottom">
+          
   </div>
+    
+</footer>
 </template>
 
 <script>
@@ -37,61 +37,36 @@ export default {
     name: 'FooterDc',
     data (){
         return {
-            items: [
+            Comics: [
                 {
-                    item:[
-                        'uno',
-                        'due',
-                        'tre',
-                        'quattro',
-                        'cinque',
-                        'sei',
-                        'sette',
-                        'otto',
-                        'nove',
-                     ]
-
+                href: '#',
+                text: 'Characters'
                 },
                 {
-                    item:[
-                        'uno',
-                        'due',
-                        'tre',
-                        'quattro',
-                        'cinque',
-                        'sei',
-                        'sette',
-                        'otto',
-                        'nove',
-                     ]
+                href: '#',
+                text: 'Comics'
                 },
                 {
-                    item:[
-                        'uno',
-                        'due',
-                        'tre',
-                        'quattro',
-                        'cinque',
-                        'sei',
-                        'sette',
-                        'otto',
-                        'nove',
-                     ]
+                href: '#',
+                text: 'Movie'
                 },
                 {
-                    item:[
-                        'uno',
-                        'due',
-                        'tre',
-                        'quattro',
-                        'cinque',
-                        'sei',
-                        'sette',
-                        'otto',
-                        'nove',
-                     ]
+                href: '#',
+                text: 'Tv'
+                },
+                {
+                href: '#',
+                text: 'Games'
+                },
+                {
+                href: '#',
+                text: 'Videos'
+                },
+                {
+                href: '#',
+                text: 'News'
                 }
-            ]
+            ],
         }
     }
 }
@@ -101,18 +76,44 @@ export default {
 @import '../assets/css/style.scss';
 
 .container-footer{
-    height: 400px;
+    height: 500px;
     width: 100vw;
+    color: $white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-image: url(../img/footer-bg.jpg);
     background-size: cover;
     overflow: hidden;
 }
 
-li{
-    color: $white;
+.container-lists{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.list{
+    width: 25%;
+    margin-right: 1rem;
+    margin-bottom: .6rem;
+    list-style: none;
+    li{
+        margin: .2rem;
+        h3{
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+        a{
+            color: $white-text;
+            text-decoration: none;
+        }
+    }
+}
+
+.container-bottom{
+    height: 100px;
+    background-color: $color-footer
+}
+
 
 </style>

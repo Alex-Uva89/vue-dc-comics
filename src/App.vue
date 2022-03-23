@@ -17,7 +17,7 @@ export default {
   components: {
     HeaderDc,
     ContentDc,
-    FooterDc
+    FooterDc,
   }
 }
 </script>
